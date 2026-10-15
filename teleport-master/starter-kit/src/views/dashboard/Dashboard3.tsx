@@ -1,0 +1,18 @@
+import ColorBoxes from "src/components/dashboards/dashboard3/ColorBoxes";
+// import TaskManager from "src/components/apps/kanban/TaskManager";
+// import { KanbanDataContextProvider } from "src/context/kanbancontext";
+// import CardBox from "src/components/shared/CardBox";
+
+const Dashboard3 = () => {
+    return (
+        <>
+            <div className="grid grid-cols-12 gap-30" style={{ gap: '20px' }}>
+                <div className="col-span-12">
+                    <ColorBoxes />
+                </div>
+            </div>
+        </>
+    )
+}
+
+export default Dashboard3;

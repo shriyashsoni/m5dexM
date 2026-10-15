@@ -1,0 +1,21 @@
+
+import CardBox from "src/components/shared/CardBox";
+import { KanbanDataContextProvider } from "src/context/kanbancontext";
+// import BreadcrumbComp from "src/layouts/full/shared/breadcrumb/BreadcrumbComp";
+import LiquidityManager from "src/components/liquidity/LiquidityManager";
+
+function kanban() {
+    return (
+        <>
+            <KanbanDataContextProvider>
+                {/*<BreadcrumbComp title="Kanban app" items={BCrumb} />*/}
+                <div className="mb-6">
+                    <CardBox>
+                        <LiquidityManager />
+                    </CardBox>
+                </div>
+            </KanbanDataContextProvider>
+        </>
+    )
+}
+export default kanban
